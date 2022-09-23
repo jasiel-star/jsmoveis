@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando DOM</title>
+    <style>
+        body{
+            background: rgb(43, 0, 236);
+            font: normal 15pt arial;
+            color: white;
+
+        }
+        fieldset{
+            width: 300px;
+            font-size: 20px;
+            background: red;
+            
+        }
+    </style>
+
+</head>
+<body>
+        <h1>INICANDO MEUS ESTUDOS</h1>
+        <table border="1px"
+            <form>
+                <form action="pagina.php">
+                    <fieldset>
+                    <legend>Informações pessoais: </legend>
+                    Primeiro nome:
+                    <br>
+                    <input type="text" name="firstname" value="">
+                    <br/> Último nome:
+                    <br>
+                    <input type="text" name="lastname" value="">
+                    <br/>  Email
+                    <br/>
+                    <input type="text" name="lastname" value="">
+                    <br/>  Numero
+                    <br/>
+                    <input type="text" name="lastname" value="">
+                    <br>
+                    
+                    <input type="submit" value="Enviar">
+                    </fieldset>
+                    </form>
+            </form>
+        <P>AQUI VAI O RESULTADO</P>
+        <p>aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+        <div id="jasi">clique em mim</div>
+        <script>
+            let p1 = window.document.getElementsByTagName("p")[0];
+            let d = window.document.getElementById("jasi");
+            d.style.background = "green"
+            d.innerText = "estou aqui agora e vamos la"
+            
+
+        </script>
+</body>
+</html>
